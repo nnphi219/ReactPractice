@@ -9,6 +9,7 @@ import TicTacToe from './TicTacToe/TicTacToe';
 import DemoComponent from './Components/DemoComponent';
 import Toggle from './HandlingEvents/Toggle';
 import ConditionalRendering from './ConditionalRendering/ConditionalRendering';
+import ListsAndKeys from './ListsAndKeys/ListsAndKeys';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
@@ -71,9 +72,17 @@ registerServiceWorker();
 
 // ================================ Conditional rendering
 
+// ReactDOM.render(
+//   // Try changing to isLoggedIn={true}:
+//   <ConditionalRendering isLoggedIn={false} />,
+//   document.getElementById('root')
+// );
+
+
+// ================================== Lists and Keys
+
 
 ReactDOM.render(
-  // Try changing to isLoggedIn={true}:
-  <ConditionalRendering isLoggedIn={false} />,
+  <ListsAndKeys />,
   document.getElementById('root')
 );
