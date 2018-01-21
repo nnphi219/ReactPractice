@@ -8,6 +8,7 @@ import App from './App';
 import TicTacToe from './TicTacToe/TicTacToe';
 import DemoComponent from './Components/DemoComponent';
 import Toggle from './HandlingEvents/Toggle';
+import ConditionalRendering from './ConditionalRendering/ConditionalRendering';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
@@ -63,6 +64,16 @@ registerServiceWorker();
 
 
 // ================================ Handling Events
+// ReactDOM.render(
+//   <Toggle />, document.getElementById('root')
+// );
+
+
+// ================================ Conditional rendering
+
+
 ReactDOM.render(
-  <Toggle />, document.getElementById('root')
+  // Try changing to isLoggedIn={true}:
+  <ConditionalRendering isLoggedIn={false} />,
+  document.getElementById('root')
 );
