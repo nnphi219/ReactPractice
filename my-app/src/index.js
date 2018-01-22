@@ -11,6 +11,7 @@ import Toggle from './HandlingEvents/Toggle';
 import ConditionalRendering from './ConditionalRendering/ConditionalRendering';
 import ListsAndKeys from './ListsAndKeys/ListsAndKeys';
 import DemoForms from './Forms/Forms';
+import Calculator from './BoilingVerdict/BoilingVerdict';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
@@ -90,7 +91,14 @@ registerServiceWorker();
 
 // =================================== Forms
 
+// ReactDOM.render(
+//   <DemoForms />,
+//   document.getElementById('root')
+// );
+
+
+// ==================================== Lifting State Up
 ReactDOM.render(
-  <DemoForms />,
+  <Calculator />,
   document.getElementById('root')
 );
