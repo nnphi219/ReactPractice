@@ -10,6 +10,7 @@ import DemoComponent from './Components/DemoComponent';
 import Toggle from './HandlingEvents/Toggle';
 import ConditionalRendering from './ConditionalRendering/ConditionalRendering';
 import ListsAndKeys from './ListsAndKeys/ListsAndKeys';
+import DemoForms from './Forms/Forms';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
@@ -81,8 +82,15 @@ registerServiceWorker();
 
 // ================================== Lists and Keys
 
+// ReactDOM.render(
+//   <ListsAndKeys />,
+//   document.getElementById('root')
+// );
+
+
+// =================================== Forms
 
 ReactDOM.render(
-  <ListsAndKeys />,
+  <DemoForms />,
   document.getElementById('root')
 );
