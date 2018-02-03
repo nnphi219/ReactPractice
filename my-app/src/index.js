@@ -12,6 +12,7 @@ import ConditionalRendering from './ConditionalRendering/ConditionalRendering';
 import ListsAndKeys from './ListsAndKeys/ListsAndKeys';
 import DemoForms from './Forms/Forms';
 import Calculator from './BoilingVerdict/BoilingVerdict';
+import Composition_Inheritance from './Composition_Inheritance/Composition_Inheritance';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
@@ -98,7 +99,16 @@ registerServiceWorker();
 
 
 // ==================================== Lifting State Up
+
+// ReactDOM.render(
+//   <Calculator />,
+//   document.getElementById('root')
+// );
+
+
+// ===================================== Composition_Inheritance
+
 ReactDOM.render(
-  <Calculator />,
+  <Composition_Inheritance />,
   document.getElementById('root')
 );
