@@ -16,6 +16,8 @@ import Composition_Inheritance from './Composition_Inheritance/Composition_Inher
 import Thinking_In_React_Myself from './Thinking_In_React/Thinking_In_React_Myself';
 import Thinking_In_React from './Thinking_In_React/Thinking_In_React';
 
+import jsx_in_depth from './Advanced_Guides/JSX_In_Depth/jsx_in_depth';
+
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
 registerServiceWorker();
@@ -118,11 +120,21 @@ registerServiceWorker();
 
 // ===================================== Thinking in react
 
+// ReactDOM.render(
+//   // <Thinking_In_React_Myself />,
+//   <div>
+//     <Thinking_In_React_Myself />
+//     <Thinking_In_React />
+//   </div>,
+//   document.getElementById('root')
+// );
+
+
+// =========================================================== Advanced Guides ============================
+
+// ================ JSX in depth
+
 ReactDOM.render(
-  // <Thinking_In_React_Myself />,
-  <div>
-    <Thinking_In_React_Myself />
-    <Thinking_In_React />
-  </div>,
+  <jsx_in_depth />,
   document.getElementById('root')
 );
