@@ -1,0 +1,28 @@
+.ProductTable {
+    border: 1px orange;
+    border-style: solid;
+    padding: 5px;
+}
+
+.ProductTable .SearchBar {
+    border: 1px blue;
+    border-style: solid;
+    margin-bottom: 2px;
+    padding: 5px;    
+}
+
+.ProductTable .ContentTable {
+    border: 1px green;
+    border-style: solid;
+    padding: 5px;    
+}
+
+.ProductTable .ContentTable .TitleContent {
+    border: 1px yellow;
+    border-style: solid;
+}
+
+.ProductTable .ContentTable .Contents {
+    border: 1px red;
+    border-style: solid;
+}

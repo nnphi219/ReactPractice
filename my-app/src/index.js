@@ -13,6 +13,8 @@ import ListsAndKeys from './ListsAndKeys/ListsAndKeys';
 import DemoForms from './Forms/Forms';
 import Calculator from './BoilingVerdict/BoilingVerdict';
 import Composition_Inheritance from './Composition_Inheritance/Composition_Inheritance';
+import Thinking_In_React_Myself from './Thinking_In_React/Thinking_In_React_Myself';
+import Thinking_In_React from './Thinking_In_React/Thinking_In_React';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<TicTacToe />, document.getElementById('root'));
@@ -108,7 +110,19 @@ registerServiceWorker();
 
 // ===================================== Composition_Inheritance
 
+// ReactDOM.render(
+//   <Composition_Inheritance />,
+//   document.getElementById('root')
+// );
+
+
+// ===================================== Thinking in react
+
 ReactDOM.render(
-  <Composition_Inheritance />,
+  // <Thinking_In_React_Myself />,
+  <div>
+    <Thinking_In_React_Myself />
+    <Thinking_In_React />
+  </div>,
   document.getElementById('root')
 );
