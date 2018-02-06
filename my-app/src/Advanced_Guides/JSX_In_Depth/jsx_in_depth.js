@@ -1,15 +1,38 @@
 import React, { Component } from 'react';
 
-class jsx_in_depth extends Component {
+const MyComponents = {
+    DatePicker: function DatePicker(props) {
+        return <div>Imagine a {props.color} datepicker here.</div>;
+    }
+}
+
+function BlueDatePicker() {
+    return <MyComponents.DatePicker color="blue" />;
+}
+
+class Jsx_in_depth extends Component {
     render() {
-        return(
+        const Button = props => {
+            const { kind, ...other } = props;
+            const className = kind === "primary" ? "PrimaryButton" : "SecondaryButton";
+            return <button className={className} {...other} />;
+          };
+          
+          const App = () => {
+            return (
+              <div>
+                <Button kind="primary" onClick={() => console.log("clicked!")}>
+                  Hello World!
+                </Button>
+              </div>
+            );
+          };
+        return (
             <div>
-                <button color="blue" shadowSize={2}>
-                Click Me
-                </button>
-            </div>
+                <App />
+              </div>
         );
     }
 }
 
-export default jsx_in_depth;
+export default Jsx_in_depth;
